@@ -4,7 +4,7 @@ RUN addgroup -g 1000 appgroup && adduser -u 1000 -G appgroup -S appuser
 
 WORKDIR /app
 
-COPY app/go.mod ./
+COPY app/go.mod app/go.sum ./
 
 RUN go mod download
 
