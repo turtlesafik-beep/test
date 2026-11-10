@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>Counter</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="counter-card" aria-labelledby="page-title">
+      <div class="eyebrow">DEMO APPLICATION</div>
+      <h1 id="page-title">Counter</h1>
+      <p class="subtitle">A tiny app backed by Go and PostgreSQL</p>
+
+      <div class="counter-value" id="counter-value" aria-live="polite">—</div>
+
+      <div class="controls">
+        <button class="counter-button secondary" id="decrement" type="button" aria-label="Уменьшить на один">−</button>
+        <button class="counter-button primary" id="increment" type="button" aria-label="Увеличить на один">+</button>
+      </div>
+
+      <p class="status" id="status" role="status">Подключаемся к серверу…</p>
+    </section>
+
+    <footer>Served by Nginx · API powered by Go</footer>
+  </main>
+</body>
+</html>
